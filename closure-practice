@@ -1,0 +1,14 @@
+ // 创建一个闭包的体温检测函数
+        function createcheckTem(standard) {
+            function checkTemp(n) {
+                if (n <= 37.1) {
+                    alert("您的体温正常");
+                } else {
+                    alert("您的体温偏高");
+                }
+            }
+            return checkTemp;
+        }
+
+        var checkTemp_A = createcheckTem(37.3);
+        checkTemp_A(37.1);
